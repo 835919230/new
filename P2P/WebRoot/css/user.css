@@ -1,0 +1,562 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, img, area, param{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+i{
+	width: 20px;
+	display: inline-block;
+	height: 21px;
+	padding: 5px;
+}
+
+body{
+	background-color: #EEEFF1!important;
+	font-family: Microsoft YaHei;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+}
+
+.header{
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	height: 89px;
+	background: #484848;
+	min-width: 1250px;
+}
+
+.logo img{
+	width: 170px;
+	height: 89px;
+	float: left;
+	margin: 0px 0px 0px 20px;
+}
+
+.logo img:hover{
+	cursor: pointer;
+}
+
+.link{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 480px;
+	height: 90px;
+	float: left;
+	margin-left: -240px;
+}
+
+
+.link ul,
+.aboutUser ul{
+	list-style: none;
+}
+
+.link ul li{
+	float: left;
+	position: absolute;
+}
+
+.link ul li a,
+.aboutUser ul li a{
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	font-family: Microsoft Yahei;
+	margin: 0px 0px 10px 0px;
+	display: inline-block;
+	height: 90px;
+	line-height: 85px;
+	width: 90px;
+	text-align: center;
+	border-radius: 12px;
+}
+
+.link ul li a:first-child{
+	margin-left: 0px;
+}
+
+.link ul li a:hover,
+.aboutUser ul li a:hover{
+	background-color: gray;
+}
+
+.aboutUser{
+	position: absolute;
+	right: 80px;
+}
+
+.triangle-down{
+	float: right;
+    margin-right: 50px;
+    margin-top: 35px;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid white;
+}
+
+.triangle-up{
+	float: right;
+    margin-right: 50px;
+    margin-top: 19px;
+    border-bottom: 16px solid white;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid transparent;
+}
+
+.triangle-up:hover,
+.triangle-down:hover{
+	cursor: pointer;
+}
+
+.drop-menu{
+	width: 90px;
+	opacity: 1;
+	position: absolute;
+	background-color: white;
+	right: 20px;
+	top: 90px;
+	border: 1px solid rgb(243,243,243);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	border-radius: 3px;
+}
+
+.drop-menu a{
+	padding: 5px;
+	color: #9D9D9D;
+	display: block;
+	width: 80px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 3px;
+}
+
+.drop-menu a:hover{
+	background-color: rgb(99,188,231);
+	color: white;
+}
+
+.choice{
+	display: block;
+	min-width: 1180px;
+}
+
+.list-tab{
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.list-sel{
+	margin-top: 21px;
+	margin-left: 10px;
+}
+
+.list-sel select:hover{
+	cursor: pointer;
+}
+
+.list-sel select{
+	height: 32.5px;
+	border: 1px #dcdcdc solid;
+	border-radius: 5px;
+	color: #727272;
+}
+
+.list-sel select option{
+	color: #dcdcdc;
+}
+
+
+.list-recycle{
+
+}
+
+.btn-recycle{
+
+}
+
+i#cube{
+	background: url('img/cube2.png') no-repeat;
+	margin: 4px 0 4px 15px;
+}
+
+i#table{
+	background: url('img/table1.png') no-repeat;
+	margin: 4px 0 4px 15px;
+}
+
+a#cubeA,
+a#tableA{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px #dcdcdc solid;
+}
+
+.choice div{float: left;margin-top: 21px;}
+
+.btn-recycle{
+	display: inline-block;
+	background-color: white;
+	height: 31px;
+	border-radius: 5px;
+	border: 1px #dcdcdc solid;
+	margin-right: 50px;
+}
+
+.btn-recycle:hover{
+	cursor: pointer;
+}
+
+.btn-recycle i{
+	background: url('img/rubbish.jpg') no-repeat;
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+
+.btn-recycle span{
+	display: inline-block;
+	margin: 8px 10px 10px -10px;
+	font-size: 13px;
+	color: #727272;
+}
+
+.list-sear{
+	float: right;
+	margin-right: 50px;
+}
+
+.search{
+	background: url('img/search.jpg') no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    width: 30px;
+    height: 31px;
+    border: 1px #dcdcdc solid;
+    margin-top: -5px;
+    border-radius: 3px;
+    border-left: 0px;
+}
+
+.search:hover{
+	cursor: pointer;
+}
+
+.rb-window table,
+.table-area table{
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+	table-layout: fixed;
+	font-family: Microsoft YaHei;;
+}
+
+.overhide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: black;
+	z-index: 890;
+	display: none;
+	min-width: 1024px;
+	min-height: 768px;
+	left: 0px;
+    top: 0px;
+}
+
+.rb-window{
+	width: 850px;
+	padding: 0 1px;
+	position: absolute;
+	z-index: 901;
+	left: 50%;
+	top: 50%;
+	margin-left: -425px;
+	margin-top: -245px;
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+}
+
+.rb-title{
+	display: block;
+	height: 30px;
+	margin: 10px;
+}
+
+.h1{
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+a#closeX{
+	float: right;
+}
+
+.rb-window td{
+	text-align: center;
+	padding: 6px;
+	font-size: 14px;
+	border-bottom: 1px #dedede solid;
+}
+
+.rb-window input{
+	width: 15px;
+	height: 15px;
+}
+
+.rb-window th{
+	background-color: rgb(250,250,250);
+	height: 35px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.rb-window tbody{
+	margin-top: 5px;
+}
+
+.table-wrap{
+	height: 355px;
+}
+
+#recover,
+#delete{
+	float: right;
+    display: block;
+    cursor: pointer;
+    padding: 7px 10px;
+    border: 1px #747474 solid;
+    margin: 5px;
+    font-size: 14px;
+    font-family: Microsoft Yahei;
+    border-radius: 5px;
+}
+
+#delete:hover{
+	background-color: darkred;
+	color: white;
+}
+#recover:hover{
+	background-color: #68bb47;
+	color: white;
+}
+
+.rb-footer{
+	border-top: 1px #737373 solid;
+}
+
+thead,tbody{
+	color: #666666;
+}
+
+.content{
+	padding-top: 80px;
+	display: block;
+	height: 90%;
+    min-height: 768px;
+}
+
+.list-group{
+	background-color: white;
+}
+
+.list-group ul{
+
+}
+
+.list-group ul li{
+	display: block;
+	border: 3px #dcdcdc dashed;
+	width: 330px;
+	height: 200px;
+	float: left;
+	background-color: white;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.listgroup li.form{
+	border-top: 5px solid #7acc5a;
+}
+
+.list-group a{
+	font-size: 48px;
+    color: #747474;
+    line-height: 190px;
+    margin-left: 0px;
+}
+
+.list-group i{
+	background: url('img/add.png') no-repeat;
+    background-size: 55px 45px;
+    width: 55px;
+    height: 45px;
+    margin-top: 75px;
+    float: left;
+    margin-left: 75px;
+}
+
+.list-group li:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 25px gray;
+}
+
+.list-group li:hover a#add{
+	color: rgb(83,164,244);
+}
+
+.list-group span{
+	display: block;
+}
+
+span.title{
+	font-size: 18px;
+    color: #606060;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+span.before-time{
+	margin-left: 32px;
+    font-size: 14px;
+    color: #909090;
+    height: 120px;
+}
+
+.list-under{
+	border-top: 1px #747474 solid;
+    height: 40px;
+}
+.list-under span{
+}
+
+span.status{
+	margin: 5px 0 0px 10px;
+	float: left;
+	font-size: 15px;
+	color: #68bb47;
+}
+
+span.number{
+	float: right;
+    margin: 5px 10px 0px 0px;
+    font-size: 15px;
+    color: #808080;
+}
+
+
+.list-under span{
+	
+}
+
+a.btn-new{
+	float: left;
+	display: block;
+	color: white;
+	font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 22px;
+    text-align: center;
+    background-color: #53a4f4;
+    border-radius: 8px;
+    border: 1px #dcdcdc solid;
+}
+
+.table-area{
+	background-color: white;
+    margin: 0 10px 10px 10px;
+}
+
+.table-area table{
+	min-width: 1180px;
+}
+
+.table-area select{
+	height: 32.5px;
+	border: 1px #dcdcdc solid;
+	border-radius: 5px;
+	color: #727272;
+	width: 100px;
+}
+
+.table-area select:hover{
+	cursor: pointer;
+}
+
+.table-area td{
+	text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px #dedede solid;
+    margin: 5px;
+}
+
+
+.table-area th{
+	border-bottom: 1px #dedede solid;
+	font-size: 16px;
+    padding: 15px;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.table-area tr{margin-left: -3px;}
+
+.table-area tbody{
+
+}
+
+.table-area thead{
+
+}
+
+td#first,
+th#first{
+	width: 40%;
+	text-align: left;
+	padding-left: 30px;
+}
+
+td#first:hover{
+	cursor: pointer;
+}
+
+.table-area-box{
+	margin: 90px 30px 0px 30px;
+    display: none;
+    width: 95%;
+    min-width: 1220px;
+    border: 1px #dedede solid;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px gray;
+}
+
+a#btn-table:hover{
+	background-color: rgb(111,197,255);
+}

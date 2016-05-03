@@ -1,0 +1,284 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: url('img/regbg.jpg');
+}
+
+.container{
+	padding-right: 15px;
+    padding-left: 15px;
+  	margin-left: -179px;
+  	margin-top: -230px;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	text-align: center;
+}
+
+.reg-box{
+	height: 355px;
+	width: 355px;
+	background-color: white;
+	border-radius: 10px;
+	border:1px solid #dcdcdc;
+	position: relative;
+}
+
+.reg-box h1{
+	font-family: Arial;
+	color: #78bbe6;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+.username-box input,
+.password-box input{
+	width: 300px;
+	height: 35px;
+	border:1px solid #78bbe6;
+	border-radius: 5px;
+	font-size: 18px;
+	padding-left: 5px;
+	margin: 5px 0;
+}
+
+.accept-box label{
+	position: relative;
+	margin-top: 20px;
+	left: -60px;
+	font-size: 14px;
+	color: #adadad;
+}
+
+.accept-box label input{
+	margin-top: 5px;
+	height: -5px;
+}
+
+.accept-box a{
+	position: relative;
+	text-decoration: none;
+	margin-top: 20px;
+	left: -60px;
+	font-size:14px;
+	color: #91c8ea; 
+}
+
+.regbutton-box button{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	background-color: rgb(83,164,244);
+	border:0;
+	font-size: 18px;
+	color: white;
+}
+.regbutton-box button:hover{
+	cursor: pointer;
+}
+
+.reg-footer{
+	position: absolute;
+    font-size: 14px;
+    width: 133px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -76px;
+}
+
+.reg-footer a{
+	text-decoration: none;
+	color: #91c8ea;
+}
+
+.footer{
+	margin-top: 35px;
+}
+
+.username-box{
+	padding: 10px 0px;
+}
+
+.password-box{
+	padding: 10px 0px;
+}
+
+.accept-box{
+	margin-top: 10px;
+}
+
+.regbutton-box{
+	margin-top: 20px;
+    line-height: 45px;
+    height: 45px;
+}
+
+ul{list-style:none;}
+
+.username-box .error{
+	position: absolute;
+    left: 50%;
+    display: none;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 190px;
+    top: 0;
+    margin-top: 97px;
+     background: #e68278;
+    color: white;
+    font-size: 14px;
+    font-family: Microsoft yahei;
+}
+
+.username-box .ajax-error{
+	position: absolute;
+    left: 50%;
+    display: none;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -315px;
+    top: 0;
+    margin-top: 97px;
+     background: #e68278;
+    color: white;
+    font-size: 14px;
+    font-family: Microsoft yahei;
+}
+
+.password-box .error{
+	position: absolute;
+    left: 50%;
+    display: none;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 190px;
+    top: 0;
+    margin-top: 163px;
+    background: #e68278;
+    color: white;
+    font-size: 14px;
+    font-family: Microsoft yahei;
+}
+
+.log-box{
+	height: 355px;
+	width: 355px;
+	background-color: white;
+	border-radius: 10px;
+	border:1px solid gray;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -177px;
+	margin-top: -177px;
+	z-index: 100;
+	display: none;
+}
+
+img#closeX:hover{
+	cursor: pointer;
+}
+
+.log-box h1{
+	font-family: Arial;
+	color: #78bbe6;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.log-box i{
+	margin-top: 5px;
+    margin-left: 2px;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    float: left;
+    border-right: 1px solid #e9e9e9;
+    background: #f7f7f7 url("img/user.png") no-repeat center center;
+    background-size: 58%;
+    margin-right: -30px;
+}
+
+.log-username-box input,
+.log-password-box input{
+	width: 300px;
+	height: 35px;
+	border:1px solid #78bbe6;
+	border-radius: 5px;
+	font-size: 18px;
+	padding-left: 5px;
+	margin: 5px 5px;
+	margin-left: 32px;
+}
+
+.log-accept-box label{
+	position: relative;
+	margin-top: 20px;
+	left: -40px;
+	font-size: 14px;
+	color: #adadad;
+}
+
+.accept-box label:hover,
+.accept-box input:hover{
+	cursor: pointer;
+}
+
+.accept-box label input{
+	margin-top: 5px;
+	height: -5px;
+}
+
+.accept-box a{
+	position: relative;
+	text-decoration: none;
+	margin-top: 20px;
+	left: -60px;
+	font-size:14px;
+	color: #91c8ea; 
+}
+
+.logbutton-box button{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	background-color: rgb(83,164,244);
+	margin-top: 20px;
+	border:0;
+	font-size: 18px;
+	color: white;
+}
+.logbutton-box button:hover{
+	cursor: pointer;
+}
+
+.log-footer{
+	position: relative;
+	margin-top: 35px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.log-footer a{
+	text-decoration: none;
+	color: #91c8ea;
+}
+
+.overhide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: black;
+	z-index: 3;
+	display: none;
+	min-width: 1024px;
+	min-height: 768px;
+}

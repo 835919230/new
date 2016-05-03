@@ -1,0 +1,233 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, img, area, param {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: #f3f3f3;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	font-family: Microsoft Yahei;
+}
+
+.header{
+	height: 71px;
+	width: 100%;
+	background-color: #484848;
+	min-width: 900px;
+}
+
+a.back{
+	display: block;
+    background-color: #323232;
+    width: 85px;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    line-height: 71px;
+    text-align: center;
+    font-size: 24px;
+}
+
+a.back:hover{
+	background-color: #606060;
+}
+
+.h2{
+	margin-left: 88px;
+    float: left;
+    height: 71px;
+    padding: 0 10px;
+    line-height: 71px;
+    color: #dedede;
+    font-size: 20px;
+}
+
+.time{
+	float: left;
+    height: 100%;
+}
+
+.time span{
+	color: #747474;
+	line-height: 71px;
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+.setup-box{
+	padding: 50px;
+	min-width: 830px;
+}
+
+.setup-area{
+	background-color: #fff;
+    height: 135px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px gray;
+}
+
+.status{
+	width: 135px;
+    background-color: #68bb47;
+    height: 100%;
+    float: left;
+}
+
+.triangle{
+	border-top: 15px transparent solid;
+    border-right: 10px transparent solid;
+    border-bottom: 15px transparent solid;
+    border-left: 25px white solid;
+    display: block;
+    float: left;
+    margin-left: 22px;
+    margin-top: 50px;
+}
+
+.status span{
+	display: block;
+    float: left;
+    height: 30px;
+    line-height: 20px;
+    margin-top: 55px;
+    color: white;
+    font-size: 20px;
+}
+
+.setup{
+	float: left;
+    width: 80%;
+    margin-left: 30px;
+    height: 100%;
+}
+
+.link{
+	display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.link input{
+	margin-left: 10px;
+    width: 310px;
+    height: 35px;
+    background: #fafafa;
+    border: 1px #dedede solid;
+    border-radius: 2px;
+    text-indent: 10px;
+    color: #9c9c9c;
+    font-size: 15px;
+    float: left;
+    margin-top: 12px;
+}
+
+.link span{
+	font-size: 15px;
+    color: #747474;
+    float: left;
+}
+
+.link a{
+	display: block;
+    width: 85px;
+    height: 34px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px #dcdcdc solid;
+    border-radius: 3px;
+    color: #a4a4a4;
+    margin-left: 10px;
+    float: left;
+    margin-top: 13px;
+}
+
+.link a:hover{
+	color: #68bb47;
+	border:1px #68bb47 solid;
+}
+
+.button-area{
+	height: 75px;
+}
+
+.button-area a.btn{
+	display: block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    color: #747474;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+    border: 1px #dedede solid;
+}
+
+.button-area a:hover{
+	color: #53a4f4;
+	border: 1px #53a4f4 solid;
+}
+
+/*
+a.edit:hover{
+	background-color: ;
+	border: 1px;
+}
+
+a.preview:hover{
+	background-color: ;
+	border: 1px;
+}
+
+a.copy:hover{
+	background-color: ;
+	border: 1px;
+}
+
+a.end:hover{
+	background-color: ;
+	border: 1px;
+}
+
+a.delete:hover{
+	background-color: ;
+	border: 1px;
+}
+*/
+.analysis{
+}
+
+.table-box{
+	padding:10px 100px;
+	width: 900px;
+    margin: 0 auto;
+}
+div.table{
+	background: #fff;
+	width: 900px;
+	box-shadow: 0 0 15px gray;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+table{
+	width: 100%;
+	padding: 10px;
+	border-spacing: 0;
+}
+tr{
+	text-indent: 100px;
+	border-bottom: 1px #dedede solid;
+	height: 35px;
+}
+td{
+	border-bottom: 1px #dedede solid;
+}

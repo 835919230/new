@@ -1,0 +1,160 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: \5FAE\8F6F\96C5\9ED1;
+    background: #f3f3f3;
+    min-width: 1200px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	height: 71px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    left: 0px;
+    z-index: 2000;
+    top: 0px;
+    background: #484848;
+}
+
+a.back{
+	display: inline-block;
+    width: 66px;
+    height: 71px;
+    background: #5b5b5b 30px 24px;
+    position: absolute;
+    left: 0px;
+    color: #fff;
+    text-decoration: none;
+    top: 0px;
+    line-height: 71px;
+    padding: 0px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+a.back:hover{
+	background-color: rgb(30,31,35);
+}
+
+.content{
+	width: 1123px;
+    margin: 0px auto;
+    padding: 84px 0px 11px 0px;
+}
+
+.index-center{
+	padding-top: 152px;
+}
+
+.clearfix{
+	display: block;
+	zoom: 1;
+}
+
+.content ul{
+	display: block;
+	width: 105%;
+}
+
+.bt{
+	height: 119px;
+    line-height: 116px;
+    text-align: center;
+    font-size: 42px;
+    color: #4e4e50;
+    border-bottom: 1px solid #e3eaf3;
+}
+
+.content ul li{
+	width: 357px;
+    float: left;
+    padding-bottom: 57px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 26px;
+    border-top: 8px solid #fff;
+    position: relative;
+    box-shadow: 0px 0px 6px #ddd;
+}
+
+.content ul li dl{
+	height: 289px;
+    text-align: center;
+    background: #fcfcfc;
+    padding: 30px 0px;
+}
+
+.content ul li dl dd{
+	height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.content ul li dl dd a{
+	color: #777777;
+}
+
+.content ul li.question .btn{
+	background-color: #53a4f4;
+}
+
+.content ul li.question dd a:hover{
+	color: #53a4f4;
+	text-decoration: underline;
+}
+
+.content ul li.question:hover{
+	border-top: 6px #53a4f4 solid;
+	padding-top: 2px;
+}
+
+.content ul li.form .btn{
+	background-color: #7acc5a;
+}
+
+.content ul li.form dd a:hover{
+	color: #7acc5a;
+	text-decoration: underline;
+}
+
+.content ul li.form:hover{
+	border-top: 6px #7acc5a solid;
+	padding-top: 2px;
+}
+
+.content ul li.test .btn{
+	background-color: #ffc539;
+}
+
+.content ul li.test dd a:hover{
+	color: #ffc539;
+	text-decoration: underline;
+}
+
+.content ul li.test:hover{
+	border-top: 6px #ffc539 solid;
+	padding-top: 2px;
+}
+
+.btn{
+	display: block;
+    height: 57px;
+    line-height: 57px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 186px;
+    padding-left: 171px;
+    font-size: 18px;
+    color: #fff;
+}

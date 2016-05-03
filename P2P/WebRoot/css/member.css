@@ -1,0 +1,218 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, img, area, param {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background: #f3f3f3;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.container{
+	width: 100%;
+	height: 100%;
+	font-family: Microsoft Yahei;
+	position: relative;
+}
+
+.header{
+	height: 71px;
+	width: 100%;
+	background-color: #484848;
+	min-width: 900px;
+}
+
+
+a.back{
+	display: block;
+    background-color: #323232;
+    width: 85px;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    line-height: 71px;
+    text-align: center;
+    font-size: 24px;
+    float: left;
+}
+
+a.back:hover{
+	background-color: #606060;
+}
+
+
+.header .h2{
+	margin-left: 88px;
+    float: left;
+    height: 71px;
+    padding: 0 10px;
+    line-height: 71px;
+    color: #dedede;
+    font-size: 20px;
+}
+
+.userinfo-box{
+	background: #fff;
+    margin: 50px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px gray;
+}
+
+.userinfo-area{
+	padding: 5px 30px;
+}
+
+.userinfo-box .h2{
+	height: 36px;
+    border-bottom: 1px #dcdcdc solid;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #747474;
+}
+
+.info{
+	margin: 5px 10px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.info span{
+	font-size: 16px;
+    color: #747474;
+}
+
+a.change{
+	color: darkred;
+}
+
+a.change:hover{
+	text-decoration: underline;
+}
+
+.change-user{
+	border-radius: 5px;
+	background: white;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px;
+    border: 1px #dedede solid;
+    box-shadow: 0 0 15px gray;
+    display: none;
+    z-index: 700;
+}
+
+input#username,
+input#password{
+	width: 220px;
+    height: 28px;
+    border: 1px #77a5b4 solid;
+    font-size: 16px;
+}
+
+.h1{
+	height: 35px;
+    padding: 5px 0px 0 10px;
+    border-bottom: 1px #dedede solid;
+    font-size: 19px;
+    color: #747474;
+}
+
+a.close{
+	float: right;
+    margin-right: 3px;
+    display: block;
+    width: 25px;
+    color: #747474;
+    text-align: center;
+    margin-top: -4px;
+}
+
+.edit-area{
+	text-align: center;
+    line-height: 100px;
+    height: 115px;
+}
+
+.edit-footer{
+	height: 45px;
+}
+
+a.save{
+    display: block;
+    width: 148px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #0099FF;
+    color: white;
+    margin-left: 126px;
+}
+
+a.save:hover{
+	background: rgb(111,197,255);
+}
+
+.overhide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background-color: black;
+	z-index: 699;
+	display: none;
+	min-width: 1024px;
+	min-height: 768px;
+	left: 0px;
+    top: 0px;
+}
+
+.change-psw{
+	border-radius: 5px;
+	background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 548px;
+    border: 1px #dedede solid;
+    box-shadow: 0 0 10px gray;
+    margin-left: -274px;
+    margin-top: -118px;
+    display: none;
+    z-index: 700;
+}
+
+.change-psw .edit-area{
+	height: 50px;
+    line-height: 42px;
+    text-align: left;
+    margin-left: 85px;
+}
+.change-psw a.save{
+	margin-left: 202px;
+    width: 180px;
+}
+
+.data-message{
+	display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background: #424242;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 5px;
+    z-index:999;
+}

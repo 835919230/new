@@ -1,0 +1,91 @@
+
+/*登录区域*/
+
+.login-area{
+	z-index: 100;
+	position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -123px;
+	background-color: #EEEFF1;
+}
+
+.login-area .username input,
+.login-area .password input{
+	width: 275px;
+	height: 34px;
+	font-size: 18px;
+	margin: 10px 0 ;
+	padding-left: 5px;
+}
+
+.login-area .username i{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+	background: #f7f7f7 url("img/user.png") no-repeat center center;
+	background-size: 58%;
+	margin-right: -30px;
+}
+.login-area .password i{
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+	background: #f7f7f7 url("img/password.png") no-repeat center center;
+	background-size: 58%;
+	margin-right: -30px;
+}
+
+.login-area .login-forget{
+	position: absolute;
+	left: 10px;
+	margin-left: 10px;
+}
+.login-area .login-forget a{
+	position: relative;
+	text-decoration: none;
+	font-size: 12px;
+	margin-left: 170px;
+	color: #53a4f4;
+}
+.login-area .login-forget a:hover{
+	color: #47B2E2;
+}
+
+.login-area .login-but{
+	margin-top: 10px;
+}
+
+.login-area .login-button{
+	line-height: 40px;
+	height: 40px;
+	padding: 0 0px;
+	border-radius: 4px;
+	margin-top: 18px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	width: 315px;
+	background-color: #47B2E2;
+	border:0px;
+	color: white;
+}
+
+.login-area .login-button:hover{
+	background-color: rgb(125,213,252);
+	cursor: pointer;
+}
+
+.login-area .login-forget label{
+	cursor: pointer;
+}
+
+/*end-登录区域*/
