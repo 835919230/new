@@ -6,13 +6,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 public class Graph {
@@ -109,6 +109,7 @@ public class Graph {
 	 * @param file2
 	 * @throws Exception
 	 */
+	@SuppressWarnings("resource")
 	public Graph(File file1,File file2) throws Exception{
 		init();
 		BufferedInputStream in1 = new BufferedInputStream(new FileInputStream(file1));
@@ -233,11 +234,11 @@ public class Graph {
 		for(Vertex vertex:list){
 			if(vertex.equals(v)){
 				distance.add(0);
-				disFlo.add(-Math.log(1d));
+				disFlo.add(-Math.log(1d));//给一个很小的数字
 			}
 			else{
 				distance.add(MAX_VALUE);
-				disFlo.add(-Math.log(0.0000001d));
+				disFlo.add(-Math.log(0.0000001d));//给一个很大的数字
 			}
 //			disFlo.add(0.0000001d);
 		}
@@ -373,6 +374,26 @@ public class Graph {
 		return path;
 	}
 	
+	private void constructAllPaths(){
+		for(Integer index:this.vertexMap.keySet()){
+			if(pathsMap.get(index)==null&&index!=0){
+				constructPath(vertexMap.get(0), vertexMap.get(index));
+			}
+		}
+		//输出路径
+		Set<Entry<Vertex, Path>> entry = pathsMap.entrySet();
+		for(Entry<Vertex,Path> en:entry){
+			System.out.println("-----------------------------------");
+			List<Vertex> list = en.getValue().getPreAdjVertexes();
+			System.out.println("原点到节点"+en.getValue().getVertex().getId()+"的路径如下：");
+			for(int i = list.size()-1;i >= 0;i--){
+				System.out.println("过节点"+list.get(i).getId());
+			}
+			System.out.println("最后到节点"+en.getValue().getVertex().getId());
+			System.out.println();
+		}
+	}
+	
 	/**
 	 *普通的迪杰斯特拉 
 	 */
@@ -387,12 +408,11 @@ public class Graph {
 			flagSet.add(v);
 			update(v.getId());
 		}
-		for(Integer d:distance){
-			System.out.print(d+" ");
-		}
-		System.out.println();
 		Vertex last = this.vertexMap.get(this.vertexes.size()-1);
 		Path path = constructPath(s,last);
+		//将所有路径放入pathMap中
+		constructAllPaths();
+		
 		destroy();
 		return path;
 	}
@@ -415,6 +435,14 @@ public class Graph {
 				break;
 		}
 		Path path = constructPath(s,d);
+		System.out.println("-----------------------------------");
+		List<Vertex> list = path.getPreAdjVertexes();
+		System.out.println("原点到节点"+path.getVertex().getId()+"的路径如下：");
+		for(int i = list.size()-1;i >= 0;i--){
+			System.out.println("过节点"+list.get(i).getId());
+		}
+		System.out.println("最后到节点"+path.getVertex().getId());
+		System.out.println();
 		destroy();
 		return path;
 	}
@@ -437,8 +465,8 @@ public class Graph {
 			updateFlo(v.getId());
 		}
 		Path path = constructPath(s,d);
-		for(Double ds:disFlo)
-			System.out.println(ds.floatValue());
+		//将所有路径放入pathMap中
+		constructAllPaths();
 		destroy();
 		return path;
 	}
@@ -452,21 +480,9 @@ public class Graph {
 		}
 		this.edges.removeAll(toDeleteEdges);
 		System.out.println(this.edges.size());
-//		Set<java.util.Map.Entry<Integer, ArrayList<Edge>>> entry = this.AdjacentEdges.entrySet();
-//		entry.
 		for(Edge e:toDeleteEdges){
 			List<Edge> tEdges = this.AdjacentEdges.get(e.getHead().getId());
-//			List<Edge> t_toDeleteEdges = new ArrayList<>();
-//			if(tEdges!=null){
-//				for(Edge ee:tEdges){
-//					if(e.getHead().getId()==ee.getHead().getId()
-//							&&e.getTail().getId()==ee.getTail().getId()
-//							&&e.getWeight()==ee.getWeight()){
-//						t_toDeleteEdges.add(ee);
-//					}
-//				}
-//				tEdges.removeAll(t_toDeleteEdges);
-//			}
+
 			if(tEdges!=null)
 				tEdges.removeAll(toDeleteEdges);
 		}

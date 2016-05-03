@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class Player {
 	
-	private static final int MAX_NODE_NUMBER 	 = 50;//设置生成的最大定点数量
+	private static final int MAX_NODE_NUMBER 	 = 10;//设置生成的最大定点数量
 	private static final int MAX_FLAG_NUMBER     = 2; //设置0是无向图1是有向图
 	private static final int MAX_WEIGHT_NUMBER   = 10;//设置最大权重数值
 	private static final int MAX_CAPACITY_NUMBER = 10;//设置最大容量数值
